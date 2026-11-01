@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] | Research Portfolio</title>
+    <title>Ismail MAHDI, Ph.D. | MIT Postdoctoral Associate</title>
     <style>
         /* Modern Reset & Design System */
         :root {
@@ -12,6 +12,7 @@
             --light-bg: #f4f7f5;     /* Soft Off-White/Sage */
             --dark-text: #2c3e50;    /* Dark Slate */
             --card-bg: #ffffff;      /* White */
+            --muted-text: #555555;  /* Muted Text */
         }
 
         * {
@@ -79,13 +80,20 @@
 
         .hero h1 {
             font-size: 2.5rem;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: #d1e7dd;
+            margin-bottom: 1.2rem;
+            font-weight: 500;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            color: #d1e7dd;
-            max-width: 700px;
+            font-size: 1.05rem;
+            color: #e2f0d9;
+            max-width: 750px;
             margin: 0 auto 1.5rem auto;
         }
 
@@ -119,6 +127,39 @@
             margin-bottom: 1.5rem;
         }
 
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .card-date {
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        .card-subtitle {
+            font-weight: 600;
+            color: var(--dark-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-meta {
+            font-style: italic;
+            color: var(--muted-text);
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
         /* Grid Layout for Research */
         .grid {
             display: grid;
@@ -136,6 +177,15 @@
             display: inline-block;
             margin-right: 0.4rem;
             margin-bottom: 0.8rem;
+        }
+
+        ul.bullet-list {
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        ul.bullet-list li {
+            margin-bottom: 0.4rem;
         }
 
         /* Contact & Links */
@@ -156,7 +206,7 @@
         }
 
         .btn:hover {
-            background-color: var(--accent);
+            opacity: 0.9;
         }
 
         footer {
@@ -171,6 +221,7 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
             nav { flex-direction: column; gap: 1rem; }
+            .card-header { flex-direction: column; gap: 0.2rem; }
         }
     </style>
 </head>
@@ -178,11 +229,14 @@
 
     <!-- Header Navigation -->
     <nav>
-        <div class="logo">[Your Name], Ph.D.</div>
+        <div class="logo">Ismail MAHDI, Ph.D.</div>
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#conferences">Conferences</a></li>
+            <li><a href="#advisory">Advisory</a></li>
             <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications & Talks</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -190,9 +244,10 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <h1>[Your Name]</h1>
-            <p>Researcher in Microbiology, Synthetic Biology & Precision Agriculture</p>
-            <div class="tagline">🌱 Engineering Beneficial Microbes for Sustainable Food Security</div>
+            <h1>Ismail MAHDI, Ph.D.</h1>
+            <div class="subtitle">Postdoctoral Associate | Massachusetts Institute of Technology (MIT)</div>
+            <p>Microbiology • Synthetic Biology • Biomaterial Delivery • Precision Agriculture</p>
+            <div class="tagline">🌱 Engineering Microorganisms & Biomaterials for Sustainable Agriculture</div>
         </div>
     </header>
 
@@ -202,53 +257,120 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="card">
-                <p>I work at the intersection of <strong>microbiology, synthetic biology, and plant science</strong>. My research focuses on engineering beneficial soil microbes and developing biopolymer-based delivery systems to enhance crop productivity and resilience.</p>
+                <p>I am a <strong>Postdoctoral Associate at MIT</strong> working at the intersection of <strong>microbiology, synthetic biology, and plant science</strong>. My research focuses on engineering beneficial microorganisms and developing biomaterial-based delivery systems to modulate plant metabolism and improve crop stress resilience.</p>
                 <br>
-                <p>With expertise in genetic engineering, microbial encapsulation, and plant-microbe interactions, my goal is to translate laboratory breakthroughs into scalable, sustainable solutions for real-world agriculture.</p>
+                <p>With expertise spanning genetic engineering, microbial encapsulation, plant–microbe interactions, and bioactive natural products, I aim to translate cutting-edge microbiome and synthetic biology breakthroughs into scalable, practical solutions for global crop productivity and food security.</p>
             </div>
         </section>
 
-        <!-- Research Section -->
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Postdoctoral Associate</div>
+                    <div class="card-date">11.2024 – Present</div>
+                </div>
+                <div class="card-subtitle">Department of Civil and Environmental Engineering, Massachusetts Institute of Technology (MIT)</div>
+                <div class="card-meta">Cambridge, MA, USA | Project: Disruptive & Sustainable Technologies for Agricultural Precision (DiSTAP) | Advisor: Prof. Benedetto Marelli</div>
+                <p>Focusing on engineering beneficial microorganisms and developing biomaterial-based delivery systems for sustainable agriculture, with an emphasis on plant stress resilience.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Postdoctoral Fellow</div>
+                    <div class="card-date">10.2021 – 10.2024</div>
+                </div>
+                <div class="card-subtitle">Mohammed VI Polytechnic University (UM6P)</div>
+                <div class="card-meta">Ben Guerir, Morocco | Project: Sustainable Agriculture for Africa (SAFA): UM6P-Rothamsted-Cranfield Partnership | Advisor: Prof. Mansour Sobeh</div>
+                <p>Investigated bioactive metabolites for the development of sustainable crop biostimulants and bioprotection agents aimed at improving agricultural yields.</p>
+            </div>
+
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Ph.D. in Microbial Biotechnology and Molecular Biology</div>
+                    <div class="card-date">06.2021</div>
+                </div>
+                <div class="card-subtitle">Mohammed VI Polytechnic University (UM6P) & Cadi Ayyad University</div>
+                <div class="card-meta">Marrakesh & Ben Guerir, Morocco | Jointly Supervised | Advisor: Prof. Mohamed HAFIDI</div>
+                <p><strong>Dissertation:</strong> Exploring quinoa-associated microbiome and its role in benefiting plant growth, health, and resilience.</p>
+            </div>
+
+        </section>
+
+        <!-- Conferences & Presentations Section -->
+        <section id="conferences">
+            <h2>Conferences & Presentations</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Gordon Research Conference (GRC) – Nanoscale Science and Engineering for Agriculture and Food Systems</div>
+                    <div class="card-date">June 28 – July 3, 2026</div>
+                </div>
+                <div class="card-subtitle">Southern New Hampshire University, Manchester, NH, USA</div>
+                <p style="margin-top: 0.5rem;"><strong>Poster Presentation:</strong> <em>Biopolymer-Microparticle Composite Seed Coatings Deliver Rhizobacteria to Enhance Crop Drought Resilience</em></p>
+            </div>
+
+        </section>
+
+        <!-- Pro Bono Advisory Section -->
+        <section id="advisory">
+            <h2>Pro Bono Advisory</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Scientific & Venture Advisor</div>
+                    <div class="card-date">10.2026 – Present</div>
+                </div>
+                <div class="card-subtitle">JumpShot Venture Advancement Program (JVAP) | UM6P Global Hubs</div>
+                <div class="card-meta">New York, USA</div>
+                <ul class="bullet-list">
+                    <li>Advising high-growth agritech ventures (e.g., West African Feeds, Nakuru Tubers) on scientific validation, experimental design, and agricultural biotechnology claims.</li>
+                    <li>Leading targeted scientific-validation sprints to assess research data quality and align technical evidence with commercialization strategies.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Featured Research Section -->
         <section id="research">
-            <h2>Featured Research</h2>
+            <h2>Featured Research Areas</h2>
             <div class="grid">
                 
                 <div class="card">
+                    <span class="badge">Biomaterial Delivery</span>
                     <span class="badge">Microbial Encapsulation</span>
-                    <span class="badge">Biopolymers</span>
-                    <h3>Smart Armor for Soil Microbes</h3>
-                    <p>Developing protective micro-capsules using natural biopolymers to shield engineered probiotic bacteria against harsh heat and drought conditions, ensuring safe delivery to plant roots.</p>
+                    <h3>Smart Micro-Capsules for Crop Protection</h3>
+                    <p>Designing protective biomaterial shields to protect beneficial engineered microbes against drought and thermal stress, enabling target-specific delivery to plant roots.</p>
                 </div>
 
                 <div class="card">
                     <span class="badge">Synthetic Biology</span>
                     <span class="badge">Plant Metabolism</span>
-                    <h3>Precision Bio-Inputs</h3>
-                    <p>Optimizing plant-microbe interactions to improve nutrient uptake efficiency, reduce reliance on synthetic chemical fertilizers, and promote sustainable crop yields.</p>
+                    <h3>Precision Agritech Bio-Inputs</h3>
+                    <p>Modulating plant-microbe interactions to improve nutrient availability, enhance crop photosynthetic and metabolic efficiency, and support sustainable farming practices.</p>
                 </div>
 
             </div>
-        </section>
-
-        <!-- Publications & Talks -->
-        <section id="publications">
-            <h2>Talks & Publications</h2>
-            <div class="card">
-                <h3>Smart Armor for Soil Superheroes</h3>
-                <p><em>3-Minute Pitch Presentation</em> — Demonstrating how micro-encapsulation can protect agricultural probiotics and revolutionize sustainable farming.</p>
-            </div>
-            <!-- Add future papers or presentations here -->
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
             <h2>Get In Touch</h2>
             <div class="card">
-                <p>Interested in collaboration or learning more about my research?</p><br>
+                <p>Interested in research collaboration, biomaterial delivery platforms, or agritech venture advisory?</p><br>
                 <div class="contact-links">
-                    <a href="mailto:your.email@university.edu" class="btn">Email Me</a>
-                    <a href="[suspicious link removed]" class="btn" style="background-color: #0077b5;">LinkedIn</a>
-                    <a href="[suspicious link removed]" class="btn" style="background-color: #4285f4;">Google Scholar</a>
+                    <a href="mailto:imahdi@mit.edu" class="btn">Email Me</a>
+                    <a href="https://www.linkedin.com/in/ismail-mahdi-51516a12b/" target="_blank" class="btn" style="background-color: #0077b5;">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=4ReCEIcAAAAJ" target="_blank" class="btn" style="background-color: #4285f4;">Google Scholar</a>
+                    <a href="https://www.researchgate.net/profile/Ismail-Mahdi-2" target="_blank" class="btn" style="background-color: #00ccbb;">ResearchGate</a>
                 </div>
             </div>
         </section>
@@ -256,7 +378,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2026 Ismail MAHDI. All rights reserved.</p>
     </footer>
 
 </body>
