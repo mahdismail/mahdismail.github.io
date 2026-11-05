@@ -2,1328 +2,1295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ismail Mahdi – Postdoctoral Associate at MIT working at the intersection of microbial engineering, plant science, biomaterials, and crop resilience.">
+  <title>Ismail Mahdi | Microbial Engineering & Plant Science</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --forest: #294B35;
+      --forest-dark: #1D3828;
+      --olive: #718B59;
+      --sage: #B5C69A;
+      --gold: #D5A34D;
+      --terracotta: #A96845;
+      --ivory: #F5F2E8;
+      --paper: #FBFAF5;
+      --white: #FFFFFF;
+      --text: #303B32;
+      --muted: #697469;
+      --border: #E1E5D9;
+      --shadow: 0 10px 30px rgba(41, 75, 53, 0.07);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--paper);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--olive);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--terracotta);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    .navbar {
+      background: var(--forest);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+    }
 
-<title>Ismail MAHDI, Ph.D. | MIT Postdoctoral Associate</title>
-
-<meta name="description" content="Ismail Mahdi, Ph.D., MIT Postdoctoral Associate researching microbial engineering, plant science, biomaterials and crop resilience.">
-<meta name="keywords" content="Ismail Mahdi, MIT, microbiology, synthetic biology, plant science, biomaterials, seed coating, crop resilience">
-<meta name="author" content="Ismail Mahdi">
-
-<meta property="og:title" content="Ismail MAHDI, Ph.D. | MIT">
-<meta property="og:description" content="Microbial Engineering | Plant Science | Biomaterials">
-<meta property="og:url" content="https://mahdismail.github.io/">
-<meta property="og:type" content="website">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root {
-    --navy: #153650;
-    --blue: #1c4c70;
-    --red: #a83232;
-    --background: #ffffff;
-    --section: #f4f6f8;
-    --border: #dfe4e9;
-    --text: #354554;
-    --muted: #71808d;
-    --white: #ffffff;
-    --shadow: 0 3px 14px rgba(21,54,80,.055);
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
-}
-
-body {
-    background: var(--background);
-    color: var(--text);
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-h1, h2, h3, h4 {
-    font-family: "Inter", sans-serif;
-}
-
-a {
-    color: inherit;
-}
-
-.container {
-    width: min(1120px, 91%);
-    margin: auto;
-}
-
-/* NAVIGATION */
-
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: var(--navy);
-    border-bottom: 3px solid var(--red);
-}
-
-.nav-inner {
-    width: min(1200px, 94%);
-    min-height: 68px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.logo {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    font-weight: 800;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 19px;
-    list-style: none;
-}
-
-.nav-links a {
-    color: #e1e9ef;
-    text-decoration: none;
-    font-size: .84rem;
-    font-weight: 600;
-    transition: color .2s;
-}
-
-.nav-links a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
-/* HERO */
-
-.hero {
-    background: var(--section);
-    border-bottom: 1px solid var(--border);
-    padding: 65px 0;
-}
-
-.hero-layout {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 65px;
-    align-items: center;
-}
-
-.hero-label {
-    color: var(--red);
-    font-weight: 700;
-    font-size: .78rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-}
-
-.hero h1 {
-    color: var(--navy);
-    font-size: clamp(2.5rem, 5vw, 3.7rem);
-    letter-spacing: -1.8px;
-    line-height: 1.15;
-    margin-bottom: 14px;
-}
-
-.hero-subtitle {
-    color: var(--blue);
-    font-size: 1.12rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.hero-description {
-    max-width: 650px;
-    color: #536371;
-    font-size: 1.08rem;
-    margin-bottom: 25px;
-}
-
-.hero-keywords {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    margin-bottom: 28px;
-}
-
-.hero-keywords span {
-    padding: 6px 12px;
-    background: white;
-    border: 1px solid var(--border);
-    color: var(--navy);
-    font-size: .8rem;
-    font-weight: 600;
-    border-radius: 3px;
-}
-
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 19px;
-    border-radius: 3px;
-    font-size: .9rem;
-    font-weight: 700;
-    transition: .2s;
-}
-
-.button-primary {
-    background: var(--navy);
-    color: white;
-}
-
-.button-primary:hover {
-    background: var(--blue);
-}
-
-.button-secondary {
-    border: 1px solid var(--navy);
-    color: var(--navy);
-    background: white;
-}
-
-.button-secondary:hover {
-    background: #e9eef2;
-}
-
-/* SQUARE PROFILE PHOTO */
-
-.profile-photo {
-    width: 300px;
-    height: 300px;
-    display: block;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0;
-    border: 1px solid #cbd3da;
-    box-shadow: 8px 8px 0 var(--navy);
-}
-
-.photo-caption {
-    text-align: center;
-    margin-top: 17px;
-    color: var(--muted);
-    font-size: .85rem;
-}
-
-/* SECTIONS */
-
-main {
-    padding: 65px 0;
-}
-
-section {
-    margin-bottom: 75px;
-}
-
-.section-heading {
-    margin-bottom: 27px;
-}
-
-.section-label {
-    color: var(--red);
-    text-transform: uppercase;
-    letter-spacing: 1.8px;
-    font-size: .73rem;
-    font-weight: 800;
-    margin-bottom: 6px;
-}
-
-.section-heading h2 {
-    color: var(--navy);
-    font-size: 1.85rem;
-    letter-spacing: -.5px;
-    display: inline-block;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--red);
-}
-
-.section-heading p {
-    color: var(--muted);
-    max-width: 720px;
-    margin-top: 12px;
-}
-
-/* ABOUT */
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1.6fr 1fr;
-    gap: 30px;
-}
-
-.about-text p {
-    margin-bottom: 15px;
-}
-
-.about-highlight {
-    background: var(--section);
-    border-left: 4px solid var(--red);
-    padding: 23px;
-}
-
-.about-highlight h3 {
-    color: var(--navy);
-    font-size: 1.05rem;
-    margin-bottom: 10px;
-}
-
-.about-highlight p {
-    color: var(--muted);
-    font-size: .95rem;
-}
-
-/* RESEARCH */
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-.research-card {
-    background: white;
-    border: 1px solid var(--border);
-    transition: .2s;
-}
-
-.research-card:hover {
-    box-shadow: var(--shadow);
-    transform: translateY(-3px);
-}
-
-.research-image {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    display: block;
-    background: var(--section);
-}
-
-.research-content {
-    padding: 20px;
-}
-
-.badge {
-    display: inline-block;
-    background: #edf1f5;
-    color: var(--blue);
-    padding: 4px 9px;
-    font-size: .72rem;
-    font-weight: 700;
-    margin: 0 4px 5px 0;
-}
-
-.research-content h3 {
-    color: var(--navy);
-    font-size: 1.05rem;
-    margin: 10px 0;
-}
-
-.research-content p {
-    color: var(--muted);
-    font-size: .91rem;
-}
-
-/* EXPERIENCE TIMELINE */
-
-.timeline {
-    border-left: 2px solid #d7dfe6;
-    margin-left: 8px;
-    padding-left: 28px;
-}
-
-.timeline-item {
-    position: relative;
-    background: white;
-    border: 1px solid var(--border);
-    padding: 23px 26px;
-    margin-bottom: 19px;
-}
-
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -36px;
-    top: 28px;
-    width: 12px;
-    height: 12px;
-    background: var(--red);
-    border: 3px solid white;
-    outline: 1px solid #d7dfe6;
-    border-radius: 50%;
-}
-
-.item-top {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.item-title {
-    color: var(--navy);
-    font-size: 1.1rem;
-    font-weight: 800;
-}
-
-.item-date {
-    color: var(--red);
-    font-weight: 700;
-    font-size: .85rem;
-}
-
-.item-organization {
-    color: var(--blue);
-    font-weight: 700;
-    margin-top: 5px;
-}
-
-.item-meta {
-    color: var(--muted);
-    font-size: .88rem;
-    font-style: italic;
-    margin: 5px 0 12px;
-}
-
-.timeline-item p,
-.timeline-item li {
-    color: #596976;
-    font-size: .94rem;
-}
-
-.timeline-item ul {
-    padding-left: 20px;
-    margin-top: 8px;
-}
-
-/* PUBLICATIONS */
-
-.publications-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.publication-card {
-    background: white;
-    border: 1px solid var(--border);
-    padding: 23px 26px;
-    transition: .2s;
-}
-
-.publication-card:hover {
-    border-left: 4px solid var(--red);
-    box-shadow: var(--shadow);
-}
-
-.publication-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 10px;
-}
-
-.publication-year {
-    color: var(--red);
-    font-weight: 800;
-    font-size: .86rem;
-}
-
-.publication-type {
-    color: var(--blue);
-    background: #edf1f5;
-    padding: 4px 9px;
-    font-size: .72rem;
-    font-weight: 700;
-}
-
-.publication-card h3 {
-    color: var(--navy);
-    font-size: 1.02rem;
-    line-height: 1.55;
-    margin-bottom: 10px;
-}
-
-.publication-authors {
-    color: var(--muted);
-    font-size: .89rem;
-    margin-bottom: 5px;
-}
-
-.publication-authors strong {
-    color: var(--navy);
-}
-
-.publication-journal {
-    color: var(--blue);
-    font-weight: 700;
-    font-size: .88rem;
-    margin-bottom: 12px;
-}
-
-.publication-link {
-    color: var(--red);
-    font-size: .86rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.publication-link:hover {
-    text-decoration: underline;
-}
-
-/* EDUCATION AND OTHER DETAILS */
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 17px;
-}
-
-.info-card {
-    background: white;
-    border: 1px solid var(--border);
-    padding: 23px;
-}
-
-.info-card h3 {
-    color: var(--navy);
-    font-size: 1.02rem;
-    margin: 7px 0;
-}
-
-.info-card .date {
-    color: var(--red);
-    font-size: .82rem;
-    font-weight: 700;
-}
-
-.info-card .institution {
-    color: var(--blue);
-    font-weight: 600;
-    font-size: .9rem;
-}
-
-.info-card p {
-    color: var(--muted);
-    font-size: .9rem;
-    margin-top: 9px;
-}
-
-/* CONTACT */
-
-.contact-section {
-    background: var(--navy);
-    color: white;
-    padding: 40px;
-    border-top: 4px solid var(--red);
-}
-
-.contact-section h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 1.9rem;
-    margin-bottom: 8px;
-}
-
-.contact-section p {
-    color: #d4e0e8;
-    margin-bottom: 22px;
-}
-
-.contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 11px;
-}
-
-.contact-links a {
-    text-decoration: none;
-    color: white;
-    border: 1px solid #71899b;
-    padding: 9px 16px;
-    font-size: .86rem;
-    font-weight: 600;
-    transition: .2s;
-}
-
-.contact-links a:hover {
-    background: white;
-    color: var(--navy);
-}
-
-/* FOOTER */
-
-footer {
-    background: var(--section);
-    border-top: 1px solid var(--border);
-    text-align: center;
-    padding: 24px;
-    color: var(--muted);
-    font-size: .85rem;
-}
-
-/* RESPONSIVE */
-
-@media(max-width: 900px) {
     .nav-inner {
-        flex-direction: column;
-        padding: 13px 0;
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      color: var(--white);
+      font-family: "Playfair Display", serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .logo:hover {
+      color: var(--sage);
     }
 
     .nav-links {
-        justify-content: center;
-        gap: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      list-style: none;
     }
 
-    .hero-layout {
-        grid-template-columns: 1fr 240px;
-        gap: 30px;
+    .nav-links a {
+      color: rgba(255,255,255,0.88);
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 95px 0 100px;
+      background-color: var(--ivory);
+      background-image:
+        repeating-linear-gradient(
+          165deg,
+          transparent 0,
+          transparent 43px,
+          rgba(113,139,89,0.07) 44px,
+          transparent 46px
+        );
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      right: -110px;
+      top: -140px;
+      border: 1px solid rgba(113,139,89,0.16);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 25px rgba(113,139,89,0.035),
+        0 0 0 55px rgba(113,139,89,0.025);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr;
+      align-items: center;
+      gap: 75px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--olive);
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.8rem, 5vw, 4.4rem);
+      line-height: 1.12;
+      color: var(--forest-dark);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--olive);
+    }
+
+    .hero-description {
+      font-size: 1.12rem;
+      color: #566257;
+      max-width: 650px;
+      margin-bottom: 25px;
+    }
+
+    .hero-position {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--forest);
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 21px;
+      border-radius: 5px;
+      background: var(--forest);
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid var(--forest);
+      transition: all 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--forest-dark);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      background: transparent;
+      color: var(--forest);
+    }
+
+    .button-outline:hover {
+      background: var(--forest);
+      color: var(--white);
+    }
+
+    .profile-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .profile-photo {
-        width: 240px;
-        height: 240px;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 0;
+      border: 7px solid var(--white);
+      box-shadow: 12px 12px 0 var(--sage);
+    }
+
+    /* General sections */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      margin-bottom: 38px;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      color: var(--forest);
+      font-size: clamp(2rem, 3vw, 2.7rem);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 3px;
+      margin-top: 13px;
+      background: var(--gold);
+      border-radius: 3px;
+    }
+
+    h3 {
+      color: var(--forest);
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 760px;
+      margin-top: 16px;
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .about-text {
+      font-size: 1.02rem;
+      color: #4D594F;
+    }
+
+    .about-highlight {
+      background: var(--ivory);
+      border-left: 4px solid var(--olive);
+      padding: 25px;
+      border-radius: 4px;
+    }
+
+    .about-highlight h3 {
+      margin-bottom: 14px;
+    }
+
+    .about-highlight ul {
+      padding-left: 19px;
+      color: var(--muted);
+    }
+
+    .about-highlight li {
+      margin-bottom: 8px;
+    }
+
+    /* Research areas */
+
+    .research-section {
+      background: #F2F4EC;
     }
 
     .research-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media(max-width: 650px) {
-    .hero {
-        padding: 45px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
     }
 
-    .hero-layout {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .research-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, border-color 0.25s ease;
     }
 
-    .hero-photo-wrap {
-        grid-row: 1;
-        justify-self: center;
+    .research-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--sage);
     }
 
-    .profile-photo {
-        width: 230px;
-        height: 230px;
-        box-shadow: 6px 6px 0 var(--navy);
+    .research-card img {
+      width: 100%;
+      height: 205px;
+      object-fit: cover;
+      background: var(--ivory);
     }
 
-    .hero-keywords,
-    .hero-buttons {
-        justify-content: center;
+    .research-card-content {
+      padding: 24px;
     }
 
-    .about-grid,
-    .research-grid,
-    .info-grid {
-        grid-template-columns: 1fr;
+    .research-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.25rem;
+      margin-bottom: 10px;
     }
 
-    main {
-        padding: 45px 0;
+    .research-card p {
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin-bottom: 0;
     }
 
-    section {
-        margin-bottom: 55px;
+    /* Timeline / experience */
+
+    .timeline {
+      border-left: 2px solid var(--sage);
+      margin-left: 8px;
+      padding-left: 30px;
     }
 
     .timeline-item {
-        padding: 19px;
+      position: relative;
+      padding-bottom: 35px;
     }
 
-    .contact-section {
-        padding: 27px 20px;
+    .timeline-item:last-child {
+      padding-bottom: 0;
     }
-}
-</style>
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--olive);
+      border: 3px solid var(--paper);
+      left: -39px;
+      top: 5px;
+      box-shadow: 0 0 0 1px var(--olive);
+    }
+
+    .timeline-date {
+      color: var(--terracotta);
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 4px;
+    }
+
+    .timeline-org {
+      color: var(--olive);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+      max-width: 850px;
+    }
+
+    /* Advisory */
+
+    .advisory-section {
+      background: var(--ivory);
+    }
+
+    .advisory-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--terracotta);
+      padding: 30px;
+      border-radius: 7px;
+      max-width: 850px;
+      box-shadow: var(--shadow);
+    }
+
+    .advisory-card .role-date {
+      color: var(--terracotta);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    /* Publications */
+
+    .publication-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .publication-card {
+      padding: 24px 27px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--white);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .publication-card:hover {
+      border-color: var(--sage);
+      transform: translateY(-2px);
+    }
+
+    .publication-type {
+      display: inline-block;
+      color: var(--terracotta);
+      background: #F8EEE8;
+      padding: 4px 9px;
+      border-radius: 3px;
+      font-size: 0.73rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 10px;
+    }
+
+    .publication-card h3 {
+      font-size: 1.08rem;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .publication-authors {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 7px;
+    }
+
+    .publication-journal {
+      color: var(--forest);
+      font-weight: 600;
+      font-size: 0.91rem;
+    }
+
+    .publication-links {
+      margin-top: 12px;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .publication-links a {
+      margin-right: 15px;
+    }
+
+    .scholar-link {
+      margin-top: 25px;
+    }
+
+    /* Funding */
+
+    .funding-section {
+      background: #F2F4EC;
+    }
+
+    .funding-card {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 25px;
+      align-items: start;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .funding-year {
+      background: var(--forest);
+      color: var(--white);
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+
+    .funding-year span {
+      display: block;
+      color: var(--sage);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .funding-card p {
+      color: var(--muted);
+    }
+
+    /* Education and certificates */
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .education-card {
+      background: var(--white);
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .education-card .year {
+      color: var(--terracotta);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .education-card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .cert-list {
+      margin-top: 35px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .cert-item {
+      padding: 18px 20px;
+      border-left: 3px solid var(--gold);
+      background: var(--ivory);
+      color: var(--text);
+      border-radius: 3px;
+    }
+
+    /* Conferences */
+
+    .conference-card {
+      padding: 25px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      max-width: 850px;
+    }
+
+    .conference-card .date {
+      color: var(--terracotta);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    .conference-card h3 {
+      margin-top: 8px;
+    }
+
+    .conference-card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    /* Contact */
+
+    .contact-section {
+      position: relative;
+      overflow: hidden;
+      background: var(--forest);
+      color: var(--white);
+      background-image:
+        radial-gradient(
+          ellipse at 90% 10%,
+          rgba(181,198,154,0.13),
+          transparent 45%
+        );
+    }
+
+    .contact-section h2 {
+      color: var(--white);
+    }
+
+    .contact-section h2::after {
+      background: var(--gold);
+    }
+
+    .contact-section p {
+      color: rgba(255,255,255,0.8);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      margin-top: 30px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-links a {
+      color: var(--sage);
+      font-weight: 600;
+    }
+
+    .contact-links a:hover {
+      color: var(--gold);
+    }
+
+    .contact-note {
+      color: rgba(255,255,255,0.75);
+      max-width: 450px;
+    }
+
+    /* Footer */
+
+    footer {
+      background: var(--forest-dark);
+      color: rgba(255,255,255,0.65);
+      text-align: center;
+      padding: 22px 0;
+      font-size: 0.83rem;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 850px) {
+      .nav-inner {
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 19px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        text-align: center;
+      }
+
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .profile-photo {
+        width: 260px;
+        height: 260px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 60px 0;
+      }
+
+      .hero {
+        padding: 65px 0 75px;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .research-grid,
+      .education-grid,
+      .cert-list,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .funding-card {
+        grid-template-columns: 1fr;
+      }
+
+      .funding-year {
+        max-width: 130px;
+      }
+
+      .nav-links {
+        gap: 10px 14px;
+      }
+
+      .nav-links a {
+        font-size: 0.8rem;
+      }
+
+      .profile-photo {
+        width: 230px;
+        height: 230px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Ismail Mahdi</a>
 
-<nav>
-<div class="nav-inner">
-
-    <a href="#" class="logo">ISMAIL MAHDI, Ph.D.</a>
-
-    <ul class="nav-links">
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#grants">Funding</a></li>
+        <li><a href="#funding">Funding</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
-    </ul>
+      </ul>
+    </div>
+  </nav>
 
-</div>
-</nav>
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="container hero-grid">
 
-<!-- HERO -->
+      <div>
+        <span class="eyebrow">Microbial Engineering · Plant Science · Biomaterials</span>
 
-<header class="hero">
-<div class="container hero-layout">
-
-    <div class="hero-content">
-
-        <div class="hero-label">
-            Researcher · Microbial Biotechnology
-        </div>
-
-        <h1>Ismail MAHDI, Ph.D.</h1>
-
-        <div class="hero-subtitle">
-            Postdoctoral Associate | Massachusetts Institute of Technology
-        </div>
+        <h1>Ismail <span>Mahdi</span></h1>
 
         <p class="hero-description">
-            I work at the intersection of microbial engineering,
-            plant science, and biomaterials to develop innovative
-            biological technologies for crop resilience and
-            sustainable agriculture.
+          I am a microbiologist working at the intersection of microbial
+          engineering, plant science, biomaterials, and crop resilience.
+          My research focuses on developing biological and material-based
+          strategies to improve plant performance under environmental stress.
         </p>
 
-        <div class="hero-keywords">
-            <span>Microbiology</span>
-            <span>Synthetic Biology</span>
-            <span>Plant Science</span>
-            <span>Biomaterials</span>
-            <span>Crop Resilience</span>
-        </div>
+        <p class="hero-position">
+          Postdoctoral Associate · Massachusetts Institute of Technology (MIT)
+        </p>
 
         <div class="hero-buttons">
-            <a href="#research" class="button button-primary">
-                Explore Research
-            </a>
-
-            <a href="mailto:imahdi@mit.edu" class="button button-secondary">
-                Contact Me
-            </a>
+          <a class="button" href="#research">Explore my research</a>
+          <a class="button button-outline" href="mailto:imahdi@mit.edu">Get in touch</a>
         </div>
+      </div>
 
-    </div>
-
-    <div class="hero-photo-wrap">
+      <div class="profile-wrap">
         <img
-            src="photo.jpg"
-            alt="Ismail Mahdi, Ph.D."
-            class="profile-photo">
+          src="photo.jpg"
+          alt="Portrait of Ismail Mahdi"
+          class="profile-photo"
+        >
+      </div>
 
-        <div class="photo-caption">
-            MIT · Cambridge, Massachusetts
-        </div>
     </div>
+  </header>
 
-</div>
-</header>
+  <main>
 
-<main class="container">
+    <!-- About -->
+    <section id="about">
+      <div class="container">
 
-<!-- ABOUT -->
-
-<section id="about">
-
-    <div class="section-heading">
-        <div class="section-label">Introduction</div>
-        <h2>About Me</h2>
-    </div>
-
-    <div class="about-grid">
-
-        <div class="about-text">
-            <p>
-                I am a <strong>Postdoctoral Associate at MIT</strong>,
-                working at the intersection of microbiology,
-                synthetic biology, biomaterials, and plant science.
-            </p>
-
-            <p>
-                My research focuses on engineering beneficial
-                microorganisms and developing biomaterial-based
-                delivery systems to improve plant performance
-                and crop stress resilience.
-            </p>
-
-            <p>
-                My background spans microbial biotechnology,
-                genetic engineering, plant–microbe interactions,
-                microbial encapsulation, and bioactive natural
-                products. I am interested in translating advances
-                in microbiology and materials science into
-                practical solutions for sustainable agriculture
-                and food security.
-            </p>
+        <div class="section-heading">
+          <span class="eyebrow">Background</span>
+          <h2>About Me</h2>
         </div>
 
-        <div class="about-highlight">
+        <div class="about-grid">
+
+          <div class="about-text">
+            <p>
+              I am currently a Postdoctoral Associate at the Massachusetts
+              Institute of Technology (MIT), where I work in the Laboratory
+              for Advanced Biopolymers in the Department of Civil and
+              Environmental Engineering.
+            </p>
+
+            <p>
+              My research combines microbial biotechnology, plant science,
+              and biomaterials to develop innovative approaches for improving
+              crop resilience. I am particularly interested in engineering
+              beneficial microorganisms and designing advanced seed
+              technologies that create favorable microenvironments for
+              plant establishment and growth.
+            </p>
+
+            <p>
+              Before joining MIT, I conducted postdoctoral research at the
+              Mohammed VI Polytechnic University (UM6P) in Morocco, focusing
+              on plant-associated microorganisms, natural bioactive
+              compounds, and biological approaches to improve plant
+              performance under abiotic stress.
+            </p>
+
+            <p>
+              My academic background is in microbial biotechnology and
+              molecular biology, with a PhD focused on the interactions
+              between quinoa and its associated microbiome.
+            </p>
+          </div>
+
+          <aside class="about-highlight">
             <h3>Research interests</h3>
-            <p>
-                Engineering beneficial microorganisms, designing
-                biomaterial delivery platforms, understanding
-                plant–microbe interactions, and developing
-                biological solutions for environmental stress
-                resilience in crops.
-            </p>
+            <ul>
+              <li>Microbial engineering and synthetic biology</li>
+              <li>Plant growth-promoting microorganisms</li>
+              <li>Plant–microbe interactions</li>
+              <li>Biomaterials and seed technology</li>
+              <li>Crop resilience to environmental stress</li>
+              <li>Biological delivery systems</li>
+            </ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="research-section" id="research">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">What I work on</span>
+          <h2>Research Focus</h2>
+          <p class="section-intro">
+            My research explores how microorganisms, plants, and advanced
+            materials can work together to develop more resilient agricultural
+            systems.
+          </p>
         </div>
 
-    </div>
-</section>
+        <div class="research-grid">
 
-<!-- RESEARCH -->
+          <article class="research-card">
+            <img src="seed-coating.jpg" alt="Seed coating and biomaterial research">
 
-<section id="research">
-
-    <div class="section-heading">
-        <div class="section-label">Scientific interests</div>
-        <h2>Research Focus</h2>
-        <p>
-            Connecting microbial engineering, plant biology,
-            and materials science to advance sustainable agriculture.
-        </p>
-    </div>
-
-    <div class="research-grid">
-
-        <article class="research-card">
-            <img src="seed-coating.jpg"
-                 alt="Seed coating and biomaterial research"
-                 class="research-image">
-
-            <div class="research-content">
-                <span class="badge">Seed Technology</span>
-                <span class="badge">Biomaterials</span>
-
-                <h3>Advanced Seed Technology</h3>
-
-                <p>
-                    Developing biomaterial-based seed coatings
-                    and delivery systems to control the seed
-                    microenvironment and support beneficial
-                    plant–microbe interactions.
-                </p>
+            <div class="research-card-content">
+              <h3>Advanced Seed Technology</h3>
+              <p>
+                Developing biomaterial-based seed coatings and delivery
+                systems to control the seed microenvironment and improve
+                seed performance under challenging conditions.
+              </p>
             </div>
-        </article>
+          </article>
 
-        <article class="research-card">
-            <img src="microbial-engineering.jpg"
-                 alt="Microbial engineering research"
-                 class="research-image">
+          <article class="research-card">
+            <img src="microbial-engineering.jpg" alt="Microbial engineering research">
 
-            <div class="research-content">
-                <span class="badge">Synthetic Biology</span>
-                <span class="badge">Microbiology</span>
-
-                <h3>Engineering Beneficial Microbes</h3>
-
-                <p>
-                    Engineering plant-associated bacteria to
-                    develop biological strategies that support
-                    plant growth and resilience under
-                    environmental stress.
-                </p>
+            <div class="research-card-content">
+              <h3>Microbial Engineering</h3>
+              <p>
+                Engineering beneficial bacteria with functional traits
+                that can support plant growth, stress adaptation, and
+                more sustainable agricultural production.
+              </p>
             </div>
-        </article>
+          </article>
 
-        <article class="research-card">
-            <img src="plant-microbe.jpg"
-                 alt="Plant roots and beneficial microorganisms"
-                 class="research-image">
+          <article class="research-card">
+            <img src="plant-microbe.jpg" alt="Plant and microbial interactions">
 
-            <div class="research-content">
-                <span class="badge">Plant Science</span>
-                <span class="badge">Crop Resilience</span>
-
-                <h3>Plant–Microbe Interactions</h3>
-
-                <p>
-                    Investigating beneficial microorganisms,
-                    plant responses, and bioactive compounds
-                    that contribute to plant health and
-                    adaptation to environmental challenges.
-                </p>
+            <div class="research-card-content">
+              <h3>Plant–Microbe Interactions</h3>
+              <p>
+                Investigating the relationships between plants and their
+                associated microbiomes, including the role of beneficial
+                microorganisms in nutrient acquisition and stress tolerance.
+              </p>
             </div>
-        </article>
+          </article>
 
-    </div>
-</section>
+        </div>
+      </div>
+    </section>
 
-<!-- EXPERIENCE -->
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
 
-<section id="experience">
-
-    <div class="section-heading">
-        <div class="section-label">Professional background</div>
-        <h2>Research Experience</h2>
-    </div>
-
-    <div class="timeline">
-
-        <article class="timeline-item">
-
-            <div class="item-top">
-                <div class="item-title">Postdoctoral Associate</div>
-                <div class="item-date">November 2024 – Present</div>
-            </div>
-
-            <div class="item-organization">
-                Massachusetts Institute of Technology (MIT)
-            </div>
-
-            <div class="item-meta">
-                Department of Civil and Environmental Engineering ·
-                Cambridge, MA, USA
-                <br>
-                Advisor: Prof. Benedetto Marelli
-            </div>
-
-            <p>
-                Working on advanced seed technologies,
-                microbial engineering, and biomaterial-based
-                delivery systems to improve plant performance
-                and crop resilience.
-            </p>
-
-        </article>
-
-        <article class="timeline-item">
-
-            <div class="item-top">
-                <div class="item-title">Postdoctoral Fellow</div>
-                <div class="item-date">October 2021 – October 2024</div>
-            </div>
-
-            <div class="item-organization">
-                Mohammed VI Polytechnic University (UM6P)
-            </div>
-
-            <div class="item-meta">
-                Ben Guerir, Morocco · UM6P–Rothamsted–Cranfield Partnership
-                <br>
-                Advisor: Prof. Mansour Sobeh
-            </div>
-
-            <p>
-                Investigated bioactive plant metabolites and
-                natural extracts for the development of
-                sustainable crop biostimulants and
-                bioprotection strategies.
-            </p>
-
-        </article>
-
-    </div>
-</section>
-
-<!-- ADVISORY -->
-
-<section id="advisory">
-
-    <div class="section-heading">
-        <div class="section-label">Additional activities</div>
-        <h2>Scientific & Venture Advisory</h2>
-    </div>
-
-    <article class="timeline-item">
-
-        <div class="item-top">
-            <div class="item-title">Scientific & Venture Advisor</div>
-            <div class="item-date">October 2026 – Present</div>
+        <div class="section-heading">
+          <span class="eyebrow">Professional journey</span>
+          <h2>Research Experience</h2>
         </div>
 
-        <div class="item-organization">
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-date">November 2024 – Present</div>
+            <h3>Postdoctoral Associate</h3>
+            <div class="timeline-org">
+              Massachusetts Institute of Technology (MIT) · Cambridge, USA
+            </div>
+            <p>
+              Laboratory for Advanced Biopolymers, Department of Civil and
+              Environmental Engineering. Working on advanced seed
+              technologies, biomaterials, microbial engineering, and
+              strategies to improve crop resilience.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">October 2021 – November 2024</div>
+            <h3>Postdoctoral Researcher</h3>
+            <div class="timeline-org">
+              Mohammed VI Polytechnic University (UM6P) · Morocco
+            </div>
+            <p>
+              Conducted research on plant bioresources, natural extracts,
+              and bioactive metabolites as potential biostimulants and
+              bioprotection agents. Investigated plant responses to
+              environmental stress and the biological activities of
+              plant-associated microorganisms.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2021</div>
+            <h3>PhD in Microbial Biotechnology and Molecular Biology</h3>
+            <div class="timeline-org">
+              Cadi Ayyad University / Mohammed VI Polytechnic University · Morocco
+            </div>
+            <p>
+              Doctoral research focused on quinoa-associated microbiomes,
+              plant growth-promoting microorganisms, and the contribution
+              of beneficial bacteria to plant adaptation under environmental
+              stress.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Advisory -->
+    <section class="advisory-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Beyond research</span>
+          <h2>Scientific & Venture Advisory</h2>
+        </div>
+
+        <div class="advisory-card">
+          <div class="role-date">October 2026 – Present</div>
+          <h3>Scientific & Venture Advisor</h3>
+          <p class="timeline-org">
             JumpShot Venture Advancement Program (JVAP) · UM6P Global Hubs
+          </p>
+          <p>
+            Supporting agritech ventures through scientific validation,
+            experimental design, biotechnology assessment, and the
+            translation of scientific concepts into practical applications.
+          </p>
         </div>
 
-        <div class="item-meta">New York, USA</div>
+      </div>
+    </section>
 
-        <ul>
-            <li>
-                Advising agritech ventures on scientific validation,
-                experimental design, and agricultural biotechnology claims.
-            </li>
-            <li>
-                Supporting scientific-validation sprints to assess
-                research data quality and align technical evidence
-                with commercialization strategies.
-            </li>
-        </ul>
+    <!-- Publications -->
+    <section id="publications">
+      <div class="container">
 
-    </article>
-</section>
+        <div class="section-heading">
+          <span class="eyebrow">Scientific contributions</span>
+          <h2>Selected Publications</h2>
+          <p class="section-intro">
+            Selected peer-reviewed publications covering microbial
+            biotechnology, plant–microbe interactions, and plant stress
+            resilience.
+          </p>
+        </div>
 
-<!-- PUBLICATIONS -->
+        <div class="publication-list">
 
-<section id="publications">
-
-    <div class="section-heading">
-        <div class="section-label">Scientific contributions</div>
-        <h2>Selected Publications</h2>
-        <p>
-            Selected peer-reviewed publications on plant growth-promoting
-            bacteria, microbial biosafety, plant–microbe interactions,
-            and crop stress resilience.
-        </p>
-    </div>
-
-    <div class="publications-list">
-
-        <article class="publication-card">
-
-            <div class="publication-top">
-                <span class="publication-year">2022</span>
-                <span class="publication-type">Review Article</span>
-            </div>
-
+          <article class="publication-card">
+            <span class="publication-type">Review · 2022</span>
             <h3>
-                Antibiotic resistance in plant growth-promoting bacteria:
-                A comprehensive review and future perspectives to mitigate
-                potential gene invasion risks
+              Antibiotic resistance in plant growth-promoting bacteria:
+              A comprehensive review and future perspectives to mitigate
+              potential gene invasion risks.
             </h3>
-
-            <div class="publication-authors">
-                <strong>Mahdi, I.</strong>, Fahsi, N., Hijri, M., & Sobeh, M.
+            <p class="publication-authors">
+              Mahdi, I., Fahsi, N., Hijri, M., & Sobeh, M.
+            </p>
+            <p class="publication-journal">
+              Frontiers in Microbiology, 13 (2022).
+            </p>
+            <div class="publication-links">
+              <a href="https://doi.org/10.3389/fmicb.2022.999988" target="_blank" rel="noopener">
+                DOI ↗
+              </a>
             </div>
+          </article>
 
-            <div class="publication-journal">
-                Frontiers in Microbiology, 13 (2022)
-            </div>
-
-            <a class="publication-link"
-               href="https://doi.org/10.3389/fmicb.2022.999988"
-               target="_blank" rel="noopener">
-                View publication ↗
-            </a>
-
-        </article>
-
-        <article class="publication-card">
-
-            <div class="publication-top">
-                <span class="publication-year">2022</span>
-                <span class="publication-type">Research Article</span>
-            </div>
-
+          <article class="publication-card">
+            <span class="publication-type">Research Article · 2022</span>
             <h3>
-                Bacillus velezensis QA2 potentially induced salt stress
-                tolerance and enhanced phosphate uptake in quinoa plants
+              Bacillus velezensis QA2 potentially induced salt stress
+              tolerance and enhanced phosphate uptake in quinoa plants.
             </h3>
-
-            <div class="publication-authors">
-                <strong>Mahdi, I.</strong>, Allaoui, A., Fahsi, N., & Biskri, L.
+            <p class="publication-authors">
+              Mahdi, I., Allaoui, A., Fahsi, N., & Biskri, L.
+            </p>
+            <p class="publication-journal">
+              Microorganisms, 10(9), 1836 (2022).
+            </p>
+            <div class="publication-links">
+              <a href="https://doi.org/10.3390/microorganisms10091836" target="_blank" rel="noopener">
+                DOI ↗
+              </a>
             </div>
+          </article>
 
-            <div class="publication-journal">
-                Microorganisms, 10(9), 1836 (2022)
-            </div>
-
-            <a class="publication-link"
-               href="https://doi.org/10.3390/microorganisms10091836"
-               target="_blank" rel="noopener">
-                View publication ↗
-            </a>
-
-        </article>
-
-        <article class="publication-card">
-
-            <div class="publication-top">
-                <span class="publication-year">2021</span>
-                <span class="publication-type">Research Article</span>
-            </div>
-
+          <article class="publication-card">
+            <span class="publication-type">Research Article · 2021</span>
             <h3>
-                Rhizospheric phosphate-solubilizing Bacillus atrophaeus
-                GQJK17 S8 increases quinoa seedling growth, withstands
-                heavy metals, and mitigates salt stress
+              Rhizospheric phosphate-solubilizing Bacillus atrophaeus
+              GQJK17 S8 increases quinoa seedling growth, withstands
+              heavy metals, and mitigates salt stress.
             </h3>
-
-            <div class="publication-authors">
-                <strong>Mahdi, I.</strong>, Fahsi, N., Hafidi, M.,
-                Benjelloun, S., Allaoui, A., & Biskri, L.
-            </div>
-
-            <div class="publication-journal">
-                Sustainability, 13(6), 3307 (2021)
-            </div>
-
-            <a class="publication-link"
-               href="https://doi.org/10.3390/su13063307"
-               target="_blank" rel="noopener">
-                View publication ↗
-            </a>
-
-        </article>
-
-    </div>
-
-    <p style="margin-top:20px;color:var(--muted);font-size:.9rem;">
-        For the complete publication record, visit
-        <a href="https://scholar.google.com/citations?hl=en&user=4ReCEIcAAAAJ"
-           target="_blank" rel="noopener"
-           style="color:var(--red);font-weight:700;">
-           Google Scholar
-        </a>.
-    </p>
-
-</section>
-
-<!-- GRANTS -->
-
-<section id="grants">
-
-    <div class="section-heading">
-        <div class="section-label">Research support</div>
-        <h2>Grants & Funding</h2>
-    </div>
-
-    <div class="info-grid">
-
-        <article class="info-card">
-
-            <div class="date">2026 – 2028</div>
-
-            <h3>J-WAFS Water and Food Seed Grant</h3>
-
-            <div class="institution">
-                Abdul Latif Jameel Water and Food Systems Lab · MIT
-            </div>
-
-            <p>
-                Project: Engineering thermo-responsive plant
-                growth-promoting bacteria to induce pre-emptive
-                stomatal cooling in crops.
+            <p class="publication-authors">
+              Mahdi, I., Fahsi, N., Hafidi, M., Benjelloun, S.,
+              Allaoui, A., & Biskri, L.
             </p>
-
-            <p>
-                <strong>Principal Investigator:</strong>
-                Prof. Benedetto Marelli
+            <p class="publication-journal">
+              Sustainability, 13(6), 3307 (2021).
             </p>
-
-        </article>
-
-    </div>
-</section>
-
-<!-- EDUCATION -->
-
-<section id="education">
-
-    <div class="section-heading">
-        <div class="section-label">Academic background</div>
-        <h2>Education</h2>
-    </div>
-
-    <div class="timeline">
-
-        <article class="timeline-item">
-
-            <div class="item-top">
-                <div class="item-title">
-                    Ph.D. in Microbial Biotechnology & Molecular Biology
-                </div>
-                <div class="item-date">June 2021</div>
+            <div class="publication-links">
+              <a href="https://doi.org/10.3390/su13063307" target="_blank" rel="noopener">
+                DOI ↗
+              </a>
             </div>
+          </article>
 
-            <div class="item-organization">
-                Mohammed VI Polytechnic University & Cadi Ayyad University
-            </div>
+        </div>
 
-            <div class="item-meta">
-                Morocco · Joint supervision · Advisor: Prof. Mohamed Hafidi
-            </div>
+        <div class="scholar-link">
+          <a class="button button-outline"
+             href="https://scholar.google.com/"
+             target="_blank"
+             rel="noopener">
+            View Google Scholar profile
+          </a>
+        </div>
 
+      </div>
+    </section>
+
+    <!-- Funding -->
+    <section class="funding-section" id="funding">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Research support</span>
+          <h2>Grants & Funding</h2>
+        </div>
+
+        <div class="funding-card">
+
+          <div class="funding-year">
+            2026–2028
+            <span>Research project</span>
+          </div>
+
+          <div>
+            <h3>
+              Engineering thermo-responsive plant growth-promoting bacteria
+              to induce pre-emptive stomatal cooling in crops
+            </h3>
             <p>
-                Dissertation: Exploring the quinoa-associated microbiome
-                and its role in plant growth, health, and resilience.
+              MIT Abdul Latif Jameel Water and Food Systems Lab (J-WAFS).
             </p>
+            <p>
+              Research project focused on engineering beneficial
+              microorganisms with temperature-responsive functionality
+              to support plant adaptation to heat stress.
+            </p>
+          </div>
 
-        </article>
+        </div>
+      </div>
+    </section>
 
-        <article class="timeline-item">
+    <!-- Education -->
+    <section id="education">
+      <div class="container">
 
-            <div class="item-top">
-                <div class="item-title">
-                    M.Sc. in Biological Sciences & Health
-                </div>
-                <div class="item-date">July 2016</div>
-            </div>
-
-            <div class="item-organization">
-                Sidi Mohammed Ben Abdellah University
-            </div>
-
-            <div class="item-meta">Fez, Morocco</div>
-
-        </article>
-
-        <article class="timeline-item">
-
-            <div class="item-top">
-                <div class="item-title">
-                    B.Sc. in Cell & Molecular Biology
-                </div>
-                <div class="item-date">September 2014</div>
-            </div>
-
-            <div class="item-organization">
-                Ibn Zohr University
-            </div>
-
-            <div class="item-meta">Agadir, Morocco</div>
-
-        </article>
-
-    </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-
-<section id="certifications">
-
-    <div class="section-heading">
-        <div class="section-label">Professional development</div>
-        <h2>Certifications</h2>
-    </div>
-
-    <div class="info-grid">
-
-        <article class="info-card">
-            <div class="date">March 2026</div>
-            <h3>MIT Research Mentoring Certificate</h3>
-            <div class="institution">
-                Massachusetts Institute of Technology
-            </div>
-        </article>
-
-        <article class="info-card">
-            <div class="date">Fall 2025</div>
-            <h3>MIT Kaufman Teaching Certificate</h3>
-            <div class="institution">
-                Massachusetts Institute of Technology
-            </div>
-        </article>
-
-    </div>
-</section>
-
-<!-- CONFERENCES -->
-
-<section id="conferences">
-
-    <div class="section-heading">
-        <div class="section-label">Scientific communication</div>
-        <h2>Conferences & Presentations</h2>
-    </div>
-
-    <article class="timeline-item">
-
-        <div class="item-top">
-            <div class="item-title">
-                Gordon Research Conference – Nanoscale Science and
-                Engineering for Agriculture and Food Systems
-            </div>
-
-            <div class="item-date">June 28 – July 3, 2026</div>
+        <div class="section-heading">
+          <span class="eyebrow">Academic background</span>
+          <h2>Education</h2>
         </div>
 
-        <div class="item-organization">
-            Southern New Hampshire University · Manchester, NH, USA
+        <div class="education-grid">
+
+          <article class="education-card">
+            <div class="year">2021</div>
+            <h3>PhD – Microbial Biotechnology & Molecular Biology</h3>
+            <p>
+              Cadi Ayyad University / Mohammed VI Polytechnic University,
+              Morocco.
+            </p>
+          </article>
+
+          <article class="education-card">
+            <div class="year">2016</div>
+            <h3>MSc – Biological Sciences & Health</h3>
+            <p>
+              Sidi Mohamed Ben Abdellah University, Morocco.
+            </p>
+          </article>
+
+          <article class="education-card">
+            <div class="year">2014</div>
+            <h3>BSc – Cell & Molecular Biology</h3>
+            <p>
+              Ibn Zohr University, Morocco.
+            </p>
+          </article>
+
         </div>
 
-        <p style="margin-top:12px;">
-            <strong>Presentation:</strong>
-            <em>
-                Biopolymer-Microparticle Composite Seed Coatings
-                Deliver Rhizobacteria to Enhance Crop Drought Resilience
-            </em>
-        </p>
-
-    </article>
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-    <div class="contact-section">
-
-        <div class="section-label" style="color:#e9a5a5;">
-            Get in touch
+        <div class="section-heading" style="margin-top: 55px;">
+          <span class="eyebrow">Professional development</span>
+          <h2>Certifications</h2>
         </div>
 
-        <h2>Let's Connect</h2>
+        <div class="cert-list">
+          <div class="cert-item">
+            <strong>MIT Kaufman Teaching Certificate</strong>
+            <br>
+            <span>Fall 2025</span>
+          </div>
 
-        <p>
-            Interested in research collaboration, scientific exchange,
-            or agritech innovation? I would be happy to connect.
-        </p>
+          <div class="cert-item">
+            <strong>MIT Research Mentoring Certificate</strong>
+            <br>
+            <span>March 2026</span>
+          </div>
+        </div>
 
-        <div class="contact-links">
+      </div>
+    </section>
 
-            <a href="mailto:imahdi@mit.edu">Email</a>
+    <!-- Conferences -->
+    <section class="research-section">
+      <div class="container">
 
-            <a href="https://www.linkedin.com/in/ismail-mahdi-51516a12b/"
-               target="_blank" rel="noopener">
-                LinkedIn
+        <div class="section-heading">
+          <span class="eyebrow">Scientific exchange</span>
+          <h2>Conferences & Presentations</h2>
+        </div>
+
+        <article class="conference-card">
+          <div class="date">June 28 – July 3, 2026</div>
+          <h3>
+            Gordon Research Conference – Nanoscale Science and Engineering
+            for Agriculture and Food Systems
+          </h3>
+          <p>
+            Southern New Hampshire University, Manchester, New Hampshire, USA.
+          </p>
+          <p style="margin-top: 12px;">
+            Poster presentation:
+            <strong>
+              Biopolymer-Microparticle Composite Seed Coatings Deliver
+              Rhizobacteria to Enhance Crop Drought Resilience.
+            </strong>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow" style="color: var(--sage);">Let's connect</span>
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact-grid">
+
+          <div>
+            <p class="contact-note">
+              I welcome opportunities for scientific collaboration,
+              interdisciplinary research, and discussions around microbial
+              biotechnology, plant science, and biomaterials.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:imahdi@mit.edu">✉ imahdi@mit.edu</a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+              LinkedIn ↗
             </a>
 
-            <a href="https://scholar.google.com/citations?hl=en&user=4ReCEIcAAAAJ"
-               target="_blank" rel="noopener">
-                Google Scholar
+            <a href="https://scholar.google.com/" target="_blank" rel="noopener">
+              Google Scholar ↗
             </a>
 
-            <a href="https://www.researchgate.net/profile/Ismail-Mahdi-2"
-               target="_blank" rel="noopener">
-                ResearchGate
+            <a href="https://www.researchgate.net/" target="_blank" rel="noopener">
+              ResearchGate ↗
             </a>
+          </div>
 
         </div>
+      </div>
+    </section>
 
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Ismail Mahdi · Academic & Research Website
     </div>
-
-</section>
-
-</main>
-
-<footer>
-    © 2026 Ismail MAHDI, Ph.D. · Cambridge, Massachusetts
-</footer>
+  </footer>
 
 </body>
 </html>
