@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="Ismail Mahdi – Postdoctoral Associate at MIT working at the intersection of microbial engineering, plant science, biomaterials, and crop resilience.">
+
   <title>Ismail Mahdi | Microbial Engineering & Plant Science</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +38,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 85px;
+      scroll-padding-top: 90px;
     }
 
     body {
@@ -100,13 +102,13 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 23px;
+      gap: 22px;
       list-style: none;
     }
 
     .nav-links a {
-      color: rgba(255,255,255,0.88);
-      font-size: 0.88rem;
+      color: rgba(255,255,255,0.9);
+      font-size: 0.86rem;
       font-weight: 500;
     }
 
@@ -179,7 +181,7 @@
     }
 
     .hero-description {
-      font-size: 1.12rem;
+      font-size: 1.1rem;
       color: #566257;
       max-width: 650px;
       margin-bottom: 25px;
@@ -324,7 +326,7 @@
       margin-bottom: 8px;
     }
 
-    /* Research areas */
+    /* Research */
 
     .research-section {
       background: #F2F4EC;
@@ -373,7 +375,7 @@
       margin-bottom: 0;
     }
 
-    /* Timeline / experience */
+    /* Timeline */
 
     .timeline {
       border-left: 2px solid var(--sage);
@@ -383,7 +385,7 @@
 
     .timeline-item {
       position: relative;
-      padding-bottom: 35px;
+      padding-bottom: 40px;
     }
 
     .timeline-item:last-child {
@@ -412,18 +414,23 @@
     }
 
     .timeline-item h3 {
-      margin-bottom: 4px;
+      margin-bottom: 5px;
     }
 
     .timeline-org {
       color: var(--olive);
       font-weight: 600;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .timeline-item p {
       color: var(--muted);
-      max-width: 850px;
+      max-width: 900px;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item strong {
+      color: var(--forest);
     }
 
     /* Advisory */
@@ -442,7 +449,7 @@
       box-shadow: var(--shadow);
     }
 
-    .advisory-card .role-date {
+    .role-date {
       color: var(--terracotta);
       font-size: 0.85rem;
       font-weight: 700;
@@ -522,7 +529,7 @@
 
     .funding-card {
       display: grid;
-      grid-template-columns: 150px 1fr;
+      grid-template-columns: 155px 1fr;
       gap: 25px;
       align-items: start;
       background: var(--white);
@@ -552,7 +559,15 @@
       color: var(--muted);
     }
 
-    /* Education and certificates */
+    .funding-card h3 a {
+      color: var(--forest);
+    }
+
+    .funding-card h3 a:hover {
+      color: var(--terracotta);
+    }
+
+    /* Education */
 
     .education-grid {
       display: grid;
@@ -694,7 +709,7 @@
       .nav-links {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px 19px;
+        gap: 12px 18px;
       }
 
       .hero-grid {
@@ -752,7 +767,7 @@
       }
 
       .funding-year {
-        max-width: 130px;
+        max-width: 145px;
       }
 
       .nav-links {
@@ -776,6 +791,7 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container nav-inner">
+
       <a href="#home" class="logo">Ismail Mahdi</a>
 
       <ul class="nav-links">
@@ -787,6 +803,7 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
     </div>
   </nav>
 
@@ -795,7 +812,9 @@
     <div class="container hero-grid">
 
       <div>
-        <span class="eyebrow">Microbial Engineering · Plant Science · Biomaterials</span>
+        <span class="eyebrow">
+          Microbial Engineering · Plant Science · Biomaterials
+        </span>
 
         <h1>Ismail <span>Mahdi</span></h1>
 
@@ -812,7 +831,9 @@
 
         <div class="hero-buttons">
           <a class="button" href="#research">Explore my research</a>
-          <a class="button button-outline" href="mailto:imahdi@mit.edu">Get in touch</a>
+          <a class="button button-outline" href="mailto:imahdi@mit.edu">
+            Get in touch
+          </a>
         </div>
       </div>
 
@@ -843,8 +864,7 @@
           <div class="about-text">
             <p>
               I am currently a Postdoctoral Associate at the Massachusetts
-              Institute of Technology (MIT), where I work in the Laboratory
-              for Advanced Biopolymers in the Department of Civil and
+              Institute of Technology (MIT), in the Department of Civil and
               Environmental Engineering.
             </p>
 
@@ -858,17 +878,17 @@
             </p>
 
             <p>
-              Before joining MIT, I conducted postdoctoral research at the
-              Mohammed VI Polytechnic University (UM6P) in Morocco, focusing
-              on plant-associated microorganisms, natural bioactive
-              compounds, and biological approaches to improve plant
-              performance under abiotic stress.
+              Before joining MIT, I conducted postdoctoral research at
+              Mohammed VI Polytechnic University (UM6P) in Morocco,
+              focusing on plant-associated bioactive metabolites and
+              their potential applications in sustainable crop
+              biostimulation and bioprotection.
             </p>
 
             <p>
               My academic background is in microbial biotechnology and
-              molecular biology, with a PhD focused on the interactions
-              between quinoa and its associated microbiome.
+              molecular biology, with doctoral research focused on
+              quinoa-associated microbiomes and plant–microbe interactions.
             </p>
           </div>
 
@@ -888,24 +908,28 @@
       </div>
     </section>
 
-    <!-- Research -->
+    <!-- Research Focus -->
     <section class="research-section" id="research">
       <div class="container">
 
         <div class="section-heading">
           <span class="eyebrow">What I work on</span>
           <h2>Research Focus</h2>
+
           <p class="section-intro">
             My research explores how microorganisms, plants, and advanced
-            materials can work together to develop more resilient agricultural
-            systems.
+            materials can work together to develop more resilient
+            agricultural systems.
           </p>
         </div>
 
         <div class="research-grid">
 
           <article class="research-card">
-            <img src="seed-coating.jpg" alt="Seed coating and biomaterial research">
+            <img
+              src="seed-coating.jpg"
+              alt="Seed coating and biomaterial research"
+            >
 
             <div class="research-card-content">
               <h3>Advanced Seed Technology</h3>
@@ -918,7 +942,10 @@
           </article>
 
           <article class="research-card">
-            <img src="microbial-engineering.jpg" alt="Microbial engineering research">
+            <img
+              src="microbial-engineering.jpg"
+              alt="Microbial engineering research"
+            >
 
             <div class="research-card-content">
               <h3>Microbial Engineering</h3>
@@ -931,12 +958,15 @@
           </article>
 
           <article class="research-card">
-            <img src="plant-microbe.jpg" alt="Plant and microbial interactions">
+            <img
+              src="plant-microbe.jpg"
+              alt="Plant and microbial interactions"
+            >
 
             <div class="research-card-content">
               <h3>Plant–Microbe Interactions</h3>
               <p>
-                Investigating the relationships between plants and their
+                Investigating relationships between plants and their
                 associated microbiomes, including the role of beneficial
                 microorganisms in nutrient acquisition and stress tolerance.
               </p>
@@ -947,7 +977,7 @@
       </div>
     </section>
 
-    <!-- Experience -->
+    <!-- Research Experience -->
     <section id="experience">
       <div class="container">
 
@@ -958,75 +988,139 @@
 
         <div class="timeline">
 
+          <!-- MIT -->
           <article class="timeline-item">
-            <div class="timeline-date">November 2024 – Present</div>
+
+            <div class="timeline-date">
+              November 2024 – Present
+            </div>
+
             <h3>Postdoctoral Associate</h3>
+
             <div class="timeline-org">
-              Massachusetts Institute of Technology (MIT) · Cambridge, USA
+              Department of Civil and Environmental Engineering,
+              Massachusetts Institute of Technology (MIT)
             </div>
+
             <p>
-              Laboratory for Advanced Biopolymers, Department of Civil and
-              Environmental Engineering. Working on advanced seed
-              technologies, biomaterials, microbial engineering, and
-              strategies to improve crop resilience.
+              <strong>Location:</strong>
+              Cambridge, 02139 MA, USA
             </p>
+
+            <p>
+              <strong>Project:</strong>
+              Disruptive &amp; Sustainable Technologies for Agricultural
+              Precision (DiSTAP)
+            </p>
+
+            <p>
+              <strong>Advisor:</strong>
+              Prof. Benedetto Marelli
+            </p>
+
+            <p>
+              My research focuses on engineering beneficial microorganisms
+              and developing biomaterial-based delivery systems for
+              sustainable agriculture, with an emphasis on plant stress
+              resilience.
+            </p>
+
           </article>
 
+          <!-- UM6P -->
           <article class="timeline-item">
-            <div class="timeline-date">October 2021 – November 2024</div>
-            <h3>Postdoctoral Researcher</h3>
-            <div class="timeline-org">
-              Mohammed VI Polytechnic University (UM6P) · Morocco
+
+            <div class="timeline-date">
+              October 2021 – October 2024
             </div>
+
+            <h3>Postdoctoral Fellow</h3>
+
+            <div class="timeline-org">
+              Mohammed VI Polytechnic University (UM6P)
+            </div>
+
             <p>
-              Conducted research on plant bioresources, natural extracts,
-              and bioactive metabolites as potential biostimulants and
-              bioprotection agents. Investigated plant responses to
-              environmental stress and the biological activities of
-              plant-associated microorganisms.
+              <strong>Location:</strong>
+              Ben Guerir, Morocco
             </p>
+
+            <p>
+              <strong>Project:</strong>
+              Sustainable Agriculture for Africa (SAFA):
+              UM6P–Rothamsted–Cranfield Partnership
+            </p>
+
+            <p>
+              <strong>Advisor:</strong>
+              Prof. Mansour Sobeh
+            </p>
+
+            <p>
+              My research focused on investigating bioactive metabolites
+              for the development of sustainable crop biostimulants and
+              bioprotection agents.
+            </p>
+
           </article>
 
+          <!-- PhD -->
           <article class="timeline-item">
+
             <div class="timeline-date">2021</div>
-            <h3>PhD in Microbial Biotechnology and Molecular Biology</h3>
+
+            <h3>PhD Researcher</h3>
+
             <div class="timeline-org">
-              Cadi Ayyad University / Mohammed VI Polytechnic University · Morocco
+              Cadi Ayyad University / Mohammed VI Polytechnic University
             </div>
+
+            <p>
+              <strong>Field:</strong>
+              Microbial Biotechnology and Molecular Biology
+            </p>
+
             <p>
               Doctoral research focused on quinoa-associated microbiomes,
               plant growth-promoting microorganisms, and the contribution
-              of beneficial bacteria to plant adaptation under environmental
-              stress.
+              of beneficial bacteria to plant adaptation under
+              environmental stress.
             </p>
+
           </article>
 
         </div>
       </div>
     </section>
 
-    <!-- Advisory -->
+    <!-- Scientific and Venture Advisory -->
     <section class="advisory-section">
       <div class="container">
 
         <div class="section-heading">
           <span class="eyebrow">Beyond research</span>
-          <h2>Scientific & Venture Advisory</h2>
+          <h2>Scientific &amp; Venture Advisory</h2>
         </div>
 
         <div class="advisory-card">
-          <div class="role-date">October 2026 – Present</div>
-          <h3>Scientific & Venture Advisor</h3>
+
+          <div class="role-date">
+            October 2026 – Present
+          </div>
+
+          <h3>Scientific &amp; Venture Advisor</h3>
+
           <p class="timeline-org">
             JumpShot Venture Advancement Program (JVAP) · UM6P Global Hubs
           </p>
+
           <p>
             Supporting agritech ventures through scientific validation,
             experimental design, biotechnology assessment, and the
             translation of scientific concepts into practical applications.
           </p>
-        </div>
 
+        </div>
       </div>
     </section>
 
@@ -1037,82 +1131,109 @@
         <div class="section-heading">
           <span class="eyebrow">Scientific contributions</span>
           <h2>Selected Publications</h2>
+
           <p class="section-intro">
             Selected peer-reviewed publications covering microbial
-            biotechnology, plant–microbe interactions, and plant stress
-            resilience.
+            biotechnology, plant–microbe interactions, and plant
+            stress resilience.
           </p>
         </div>
 
         <div class="publication-list">
 
           <article class="publication-card">
+
             <span class="publication-type">Review · 2022</span>
+
             <h3>
               Antibiotic resistance in plant growth-promoting bacteria:
               A comprehensive review and future perspectives to mitigate
               potential gene invasion risks.
             </h3>
+
             <p class="publication-authors">
-              Mahdi, I., Fahsi, N., Hijri, M., & Sobeh, M.
+              Mahdi, I., Fahsi, N., Hijri, M., &amp; Sobeh, M.
             </p>
+
             <p class="publication-journal">
               Frontiers in Microbiology, 13 (2022).
             </p>
+
             <div class="publication-links">
-              <a href="https://doi.org/10.3389/fmicb.2022.999988" target="_blank" rel="noopener">
-                DOI ↗
-              </a>
+              <a
+                href="https://doi.org/10.3389/fmicb.2022.999988"
+                target="_blank"
+                rel="noopener"
+              >DOI ↗</a>
             </div>
+
           </article>
 
           <article class="publication-card">
+
             <span class="publication-type">Research Article · 2022</span>
+
             <h3>
               Bacillus velezensis QA2 potentially induced salt stress
               tolerance and enhanced phosphate uptake in quinoa plants.
             </h3>
+
             <p class="publication-authors">
-              Mahdi, I., Allaoui, A., Fahsi, N., & Biskri, L.
+              Mahdi, I., Allaoui, A., Fahsi, N., &amp; Biskri, L.
             </p>
+
             <p class="publication-journal">
               Microorganisms, 10(9), 1836 (2022).
             </p>
+
             <div class="publication-links">
-              <a href="https://doi.org/10.3390/microorganisms10091836" target="_blank" rel="noopener">
-                DOI ↗
-              </a>
+              <a
+                href="https://doi.org/10.3390/microorganisms10091836"
+                target="_blank"
+                rel="noopener"
+              >DOI ↗</a>
             </div>
+
           </article>
 
           <article class="publication-card">
+
             <span class="publication-type">Research Article · 2021</span>
+
             <h3>
               Rhizospheric phosphate-solubilizing Bacillus atrophaeus
               GQJK17 S8 increases quinoa seedling growth, withstands
               heavy metals, and mitigates salt stress.
             </h3>
+
             <p class="publication-authors">
               Mahdi, I., Fahsi, N., Hafidi, M., Benjelloun, S.,
-              Allaoui, A., & Biskri, L.
+              Allaoui, A., &amp; Biskri, L.
             </p>
+
             <p class="publication-journal">
               Sustainability, 13(6), 3307 (2021).
             </p>
+
             <div class="publication-links">
-              <a href="https://doi.org/10.3390/su13063307" target="_blank" rel="noopener">
-                DOI ↗
-              </a>
+              <a
+                href="https://doi.org/10.3390/su13063307"
+                target="_blank"
+                rel="noopener"
+              >DOI ↗</a>
             </div>
+
           </article>
 
         </div>
 
         <div class="scholar-link">
-          <a class="button button-outline"
-             href="https://scholar.google.com/"
-             target="_blank"
-             rel="noopener">
+          <a
+            class="button button-outline"
+            href="https://scholar.google.com/"
+            target="_blank"
+            rel="noopener"
+          >
             View Google Scholar profile
           </a>
         </div>
@@ -1120,38 +1241,68 @@
       </div>
     </section>
 
-    <!-- Funding -->
+    <!-- Grants and Funding -->
     <section class="funding-section" id="funding">
       <div class="container">
 
         <div class="section-heading">
           <span class="eyebrow">Research support</span>
-          <h2>Grants & Funding</h2>
+          <h2>Grants &amp; Funding</h2>
         </div>
 
         <div class="funding-card">
 
           <div class="funding-year">
-            2026–2028
-            <span>Research project</span>
+            2026
+            <span>J-WAFS Seed Grant</span>
           </div>
 
           <div>
+
             <h3>
-              Engineering thermo-responsive plant growth-promoting bacteria
-              to induce pre-emptive stomatal cooling in crops
+              <a
+                href="https://jwafs.mit.edu/projects/2026/engineering-thermo-responsive-plant-growth-promoting-bacteria-induce-pre-emptive"
+                target="_blank"
+                rel="noopener"
+              >
+                Engineering thermo-responsive plant growth-promoting
+                bacteria to induce pre-emptive stomatal cooling in crops ↗
+              </a>
             </h3>
+
+            <p>
+              <strong>Principal Investigator:</strong>
+              Prof. Benedetto Marelli
+            </p>
+
             <p>
               MIT Abdul Latif Jameel Water and Food Systems Lab (J-WAFS).
             </p>
-            <p>
-              Research project focused on engineering beneficial
-              microorganisms with temperature-responsive functionality
-              to support plant adaptation to heat stress.
-            </p>
-          </div>
 
+            <p>
+              Research focused on engineering beneficial plant-associated
+              bacteria with temperature-responsive functionality to
+              activate pre-emptive plant responses to heat stress,
+              supporting crop resilience under elevated temperatures.
+            </p>
+
+            <p>
+              <span class="publication-type">Ongoing project</span>
+            </p>
+
+            <div class="publication-links">
+              <a
+                href="https://jwafs.mit.edu/projects/2026/engineering-thermo-responsive-plant-growth-promoting-bacteria-induce-pre-emptive"
+                target="_blank"
+                rel="noopener"
+              >
+                View official MIT project ↗
+              </a>
+            </div>
+
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -1168,7 +1319,7 @@
 
           <article class="education-card">
             <div class="year">2021</div>
-            <h3>PhD – Microbial Biotechnology & Molecular Biology</h3>
+            <h3>PhD – Microbial Biotechnology &amp; Molecular Biology</h3>
             <p>
               Cadi Ayyad University / Mohammed VI Polytechnic University,
               Morocco.
@@ -1177,7 +1328,7 @@
 
           <article class="education-card">
             <div class="year">2016</div>
-            <h3>MSc – Biological Sciences & Health</h3>
+            <h3>MSc – Biological Sciences &amp; Health</h3>
             <p>
               Sidi Mohamed Ben Abdellah University, Morocco.
             </p>
@@ -1185,7 +1336,7 @@
 
           <article class="education-card">
             <div class="year">2014</div>
-            <h3>BSc – Cell & Molecular Biology</h3>
+            <h3>BSc – Cell &amp; Molecular Biology</h3>
             <p>
               Ibn Zohr University, Morocco.
             </p>
@@ -1199,6 +1350,7 @@
         </div>
 
         <div class="cert-list">
+
           <div class="cert-item">
             <strong>MIT Kaufman Teaching Certificate</strong>
             <br>
@@ -1210,29 +1362,36 @@
             <br>
             <span>March 2026</span>
           </div>
+
         </div>
 
       </div>
     </section>
 
     <!-- Conferences -->
-    <section class="research-section">
+    <section class="research-section" id="conferences">
       <div class="container">
 
         <div class="section-heading">
           <span class="eyebrow">Scientific exchange</span>
-          <h2>Conferences & Presentations</h2>
+          <h2>Conferences &amp; Presentations</h2>
         </div>
 
         <article class="conference-card">
-          <div class="date">June 28 – July 3, 2026</div>
+
+          <div class="date">
+            June 28 – July 3, 2026
+          </div>
+
           <h3>
             Gordon Research Conference – Nanoscale Science and Engineering
             for Agriculture and Food Systems
           </h3>
+
           <p>
             Southern New Hampshire University, Manchester, New Hampshire, USA.
           </p>
+
           <p style="margin-top: 12px;">
             Poster presentation:
             <strong>
@@ -1240,8 +1399,8 @@
               Rhizobacteria to Enhance Crop Drought Resilience.
             </strong>
           </p>
-        </article>
 
+        </article>
       </div>
     </section>
 
@@ -1250,7 +1409,9 @@
       <div class="container">
 
         <div class="section-heading">
-          <span class="eyebrow" style="color: var(--sage);">Let's connect</span>
+          <span class="eyebrow" style="color: var(--sage);">
+            Let's connect
+          </span>
           <h2>Contact</h2>
         </div>
 
@@ -1259,36 +1420,52 @@
           <div>
             <p class="contact-note">
               I welcome opportunities for scientific collaboration,
-              interdisciplinary research, and discussions around microbial
-              biotechnology, plant science, and biomaterials.
+              interdisciplinary research, and discussions around
+              microbial biotechnology, plant science, and biomaterials.
             </p>
           </div>
 
           <div class="contact-links">
-            <a href="mailto:imahdi@mit.edu">✉ imahdi@mit.edu</a>
 
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <a href="mailto:imahdi@mit.edu">
+              ✉ imahdi@mit.edu
+            </a>
+
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener"
+            >
               LinkedIn ↗
             </a>
 
-            <a href="https://scholar.google.com/" target="_blank" rel="noopener">
+            <a
+              href="https://scholar.google.com/"
+              target="_blank"
+              rel="noopener"
+            >
               Google Scholar ↗
             </a>
 
-            <a href="https://www.researchgate.net/" target="_blank" rel="noopener">
+            <a
+              href="https://www.researchgate.net/"
+              target="_blank"
+              rel="noopener"
+            >
               ResearchGate ↗
             </a>
-          </div>
 
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
-      © 2026 Ismail Mahdi · Academic & Research Website
+      © 2026 Ismail Mahdi · Academic &amp; Research Website
     </div>
   </footer>
 
